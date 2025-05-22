@@ -1,19 +1,14 @@
-import { HiGlobe } from "react-icons/hi";
-import SelectInput from "./SelectInput";
-import { FieldErrors, UseFormRegister, UseFormWatch } from "react-hook-form";
+import { UseFormRegister, UseFormWatch } from "react-hook-form";
 import { Inputs } from "./MainForm";
-import useFlightsStore from "@/store/flightsStore";
-import DateInput from "./DateInput";
 import CheckboxInput from "./CheckboxInput";
 import TextAreaInput from "./TextAreaInput";
 
 interface ThirdFormProps {
   register: UseFormRegister<Inputs>;
-  errors: FieldErrors<Inputs>;
   watch: UseFormWatch<Inputs>;
 }
 
-const ThirdForm = ({ register, errors, watch }: ThirdFormProps) => {
+const ThirdForm = ({ register, watch }: ThirdFormProps) => {
   const isNeedingSpecialAssistance = watch("isNeedingSpecialAssistance");
 
   return (

@@ -70,7 +70,7 @@ const MainForm = () => {
         </div>
         <div className={step != 3 ? "hidden" : ""}>
           <h1 className="text-2xl mb-4 mt-6">Servicios adicionales</h1>
-          <ThirdForm register={register} errors={errors} watch={watch} />
+          <ThirdForm register={register} watch={watch} />
         </div>
         <div className={step != 4 ? "hidden" : ""}>
           <h1 className="text-2xl mb-4 mt-6">Resumen y Confirmación</h1>

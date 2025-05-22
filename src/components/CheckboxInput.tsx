@@ -1,7 +1,6 @@
 import { FieldPath, UseFormRegister } from "react-hook-form";
 import { Inputs } from "./MainForm";
 import { HiCheck } from "react-icons/hi";
-import { useState } from "react";
 
 type CheckboxInputProps = {
   name: FieldPath<Inputs>;
